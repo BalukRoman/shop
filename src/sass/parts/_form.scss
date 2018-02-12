@@ -1,0 +1,14 @@
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="search"],
+input[type="tel"],
+textarea {
+  background-color: #ffffff;
+  box-shadow: none;
+  border-radius: 0;
+  line-height: normal;
+  border: none;
+  -webkit-appearance: none;
+}

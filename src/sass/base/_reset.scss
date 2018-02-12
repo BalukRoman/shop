@@ -1,0 +1,183 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  outline: 0 none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+mark {
+  background: none
+}
+
+button {
+  background: rgba(255, 255, 255, 0);
+  border: medium none
+}
+
+table {
+  border-spacing: 0
+}
+
+td {
+  vertical-align: middle
+}
+
+a[href^=tel] {
+  -webkit-appearance: none;
+}
+
+a:focus, button:focus {
+  outline: none;
+}
+
+input[type="submit"], input[type="button"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  border: none;
+  width: auto;
+}
+
+::-moz-focus-inner {
+  border: 0
+}
+
+input:required,
+textarea:required {
+  box-shadow: none;
+}
+
+input:invalid,
+textarea:invalid {
+  box-shadow: none;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea:focus, input:focus {
+  outline: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner {
+  border: none;
+  -webkit-appearance: none;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0px;
+}
+
+input[type=number] {
+  /* display: none; <- Crashes Chrome on hover */
+  -moz-appearance: textfield;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=text]:focus::-webkit-input-placeholder,
+input[type=text]:focus:-moz-placeholder, /* FF 4-18 */
+input[type=text]:focus::-moz-placeholder, /* FF 19+ */
+input[type=text]:focus:-ms-input-placeholder,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  color: transparent !important;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

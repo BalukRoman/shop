@@ -1,0 +1,32 @@
+//@include manyTransitions( ( background, color ), .5s, ease );
+@mixin transitionMany($transition) {
+  transition: $transition;
+}
+
+@mixin manyTransitions( $list, $time, $easing ) {
+  $transitions: ();
+  @each $transition in $list {
+    $trans: unquote("#{$transition} #{$time} #{$easing}");
+    $transitions: append($transitions, $trans, comma);
+  }
+  @include transitionMany(#{$transitions});
+}
+
+@mixin placeholder($color: $color, $font: $font, $opacity: 1) {
+  &::-webkit-input-placeholder {
+    opacity: $opacity;
+    font-family: $font;
+    color: $color;
+  }
+  &::-moz-placeholder {
+    /* Firefox 18- */
+    opacity: $opacity;
+    font-family: $font;
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    opacity: $opacity;
+    font-family: $font;
+    color: $color;
+  }
+}
